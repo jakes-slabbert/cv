@@ -1,2 +1,1 @@
-# cv
-Personal curriculum vitae (CV)
+Personal CV

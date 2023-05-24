@@ -1,0 +1,70 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description' content='')
+        meta(name='author' content='')
+
+        title Home
+
+        // Favicon
+        link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Header
+            header.py-5
+                .container.px-5.pb-5
+                    .row.gx-5.align-items-center
+                        .col-xxl-5
+                            // Header text content
+                            .text-center.text-xxl-start
+                                .badge.bg-gradient-primary-to-secondary.text-white.mb-4
+                                    .text .Net Core &middot; C# &middot; Angular &middot; Azure
+                                .fs-3.fw-light.text-muted I can help your business to
+                                h1.display-3.fw-bolder.mb-5
+                                    span.text-gradient.d-inline Make a positive impact with code
+                                .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xxl-start.mb-3
+                                    a.btn.btn-primary.btn-lg.px-5.py-3.me-sm-3.fs-6.fw-bolder(href='resume.html') Resume
+                                    a.btn.btn-outline-dark.btn-lg.px-5.py-3.fs-6.fw-bolder(href='projects.html') Projects
+                        .col-xxl-7
+                            // Header profile picture
+                            .d-flex.justify-content-center.mt-5.mt-xxl-0
+                                .profile.bg-gradient-primary-to-secondary // 
+                                    - let images = ['assets/coding_1.png', 'assets/kidlike.png', 'assets/ninja.png', 'assets/profile_ash.png', 'assets/profile.png']; //Images array
+                                    - const image = images[Math.floor(Math.random() * images.length)];
+                                    img.profile-img(src=image alt='...')
+                                    .dots-1
+                                        include includes/svg-dots.pug
+                                    .dots-2
+                                        include includes/svg-dots.pug
+                                    .dots-3
+                                        include includes/svg-dots.pug
+                                    .dots-4
+                                        include includes/svg-dots.pug
+
+            // About Section
+            section.bg-light.py-5
+                .container.px-5
+                    .row.gx-5.justify-content-center
+                        .col-xxl-8
+                            .text-center.my-5
+                                h2.display-5.fw-bolder
+                                    span.text-gradient.d-inline About Me
+                                p.lead.fw-light.mb-4 My name is Jaco Slabbert and I build software to make a difference.
+                                p.text-muted I am a focused and driven individual, devoted to maintaining a constant state of learning and mentoring. The industry of software development has intrigued and fascinated me from a very young age, and I have been in search of more efficient, cleaner, and better code ever since. I highly value all life and cultures and view a difference of opinion as an opportunity to learn from someone else. I know I would be an asset to your organization because of my belief in ever evolving software to the betterment of mankind, a yearning for knowledge and the focus to get the job done faster and more efficiently each time.
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug

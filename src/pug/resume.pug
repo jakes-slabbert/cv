@@ -1,0 +1,216 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description' content='')
+        meta(name='author' content='')
+
+        title Resume
+
+        // Favicon
+        link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100.bg-light
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page Content
+            .container.px-5.my-5
+                .text-center.mb-5
+                    h1.display-5.fw-bolder.mb-0
+                        span.text-gradient.d-inline Resume
+                .row.gx-5.justify-content-center
+
+                    .col-lg-11.col-xl-9.col-xxl-8
+
+                        // Experience Section
+                        section
+                            .d-flex.align-items-center.justify-content-between.mb-4
+                                h2.text-primary.fw-bolder.mb-0 Experience
+                                // Download resume button
+                                a.btn.btn-primary.px-4.py-3(href='https://drive.google.com/file/d/1SFMo9J8MITX_jtPr6bKmZR_GDFWilEJg/view?usp=drive_link')
+                                    .d-inline-block.bi.bi-download.me-2
+                                    | Download Resume
+
+                            // Experience Card 1
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-2 2022 - 2023
+                                                .small.fw-bolder Full stack developer
+                                                .small.text-muted Intigriti
+                                        .col-lg-8
+                                            div I was assigned as a full stack developer. The stack consisted of: C# .net core, some MVC, mostly Angular front-ends, Postgres, and MongoDb. The event queue based microservice architecture taught me a lot about the pros and cons of this architecture, above and beyond implementing it.
+
+                            // Experience Card 2
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-2 2022 - 2022
+                                                .small.fw-bolder Full stack developer
+                                                .small.text-muted CWare
+                                        .col-lg-8
+                                            div I was assigned to leading a search and rescue on a project (C# .Net core, Blazor front end, MS SQL Server) that had lost its lead developer. In one month, we got the application running, integrated with PowerBi, and POPIA compliant.
+
+                            // Experience Card 3
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-2 2022 - 2022
+                                                .small.fw-bolder Intermediate Software Developer
+                                                .small.text-muted Qode Health Solutions
+                                        .col-lg-8
+                                            div My responsibilities included: developing new applications (Fintech sector - we did a very small and efficient application in .Net Core, C#, Angular, and MS SQL Server. The CQRS, DDD, and Mediatr pattern made for a powerful combo, hosted with Azure), and before that, maintaining and developing new feautures on an existing system. The existing system was built in .Net, C#, MVC, Xamarin, and MS SQl Server on a local server. 
+                                            br
+                                            div I was one of 14 members of the OSC (One Security Council), which was tasked with overseeing security compliance for all 5 sister companies, including ISO12007, POPIA, and Penetration testing complaince.
+
+                            // Experience Card 4
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-2 2020 - 2022
+                                                .small.fw-bolder Project co-lead
+                                                .small.text-muted Contract Developer
+                                        .col-lg-8
+                                            div This is the project that taught me most of what I know about design patterns, data structures, and best coding practice. The project consisted of an Angular front end, C# .Net Core backend, Mediatr, CQRS, DDD, and 3 intertwined tree structures. Also hosted in Azure - DevOps to resources. This project ran for four years (end of 2018 to start of 2022) with very successful results upon launch thanks to our talented team.    
+
+                            // Expierence Card 5
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-2 2018 - 2020
+                                                .small.fw-bolder Junior/Intermediate Software Developer
+                                                .small.text-muted Allegiance Consulting
+                                        .col-lg-8
+                                            div My time at Allegiance was spent, at first, learning the ins and outs of Angular. The main project that the team at Allegiance worked on was a financial planning tool. This tool was built on aspx forms (legacy), MVC, Angular (final migration), .Net, and MS SQL Server. This is also where I first interacted with Azure and its resources. Loved CI/CD from the start. 
+                                            br
+                                            div The last project I was assigned to was my first "search and rescue" project. This project would teach me the most of our industry. From client interaction to architecture to implementation. This project would continue for two more years after my tenure at Allegiance came to an end. 
+
+                            // Experience Card 6
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-center.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-2 2015 - 2018
+                                                .small.fw-bolder In-house Software Developer and all-round IT guy
+                                                .small.text-muted LCP Roofing
+                                        .col-lg-8
+                                            div This was my first job, and it held more learning opportunities than can be mentioned here. Database administration, firewall administration, and networking were just some of the skills earned from this position.
+                                            br
+                                            div The main application I was hired to help with was a BPM system locally hosted and developed on site. The coding language was Vb.Net, with a MS SQL Server for data storage. SQL Server Reporting also integrated with the system and was used for custom and generated reports.  
+
+
+                            // Education Section
+                            section
+                                h2.text-info.fw-bolder.mb-4 Education
+
+                                // Education Card 1
+                                .card.shadow.border-0.rounded-4.mb-5
+                                    .card-body.p-5
+                                        .row.align-items-center.gx-5
+                                            .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                                .bg-light.p-4.rounded-4
+                                                    .text-info.fw-bolder.mb-2 2007 - 2011
+                                                    .mb-2
+                                                        .small.fw-bolder Die Hoërskool Menlopark
+                                                        .small.text-muted Pretoria, Gauteng
+                                            .col-lg-8
+                                                div During this time, I learned basic problem-solving techniques – specifically higher-grade mathematics, IT (software), and accounting.
+
+                                // Education Card 2
+                                .card.shadow.border-0.rounded-4.mb-5
+                                    .card-body.p-5
+                                        .row.align-items-center.gx-5
+                                            .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                                .bg-light.p-4.rounded-4
+                                                    .text-info.fw-bolder.mb-2 2012 - 2014
+                                                    .mb-2
+                                                        .small.fw-bolder CTI Education Group
+                                                        .small.text-muted Pretoria, Gauteng
+                                                    .fst-italic
+                                                        .small.text-muted Higher certificate
+                                                        .small.text-muted ISD (Information Software Development)
+                                            .col-lg-8
+                                                div My love of software development and creative problem-solving grew in leaps and bounds during this period.
+                                                br
+                                                div My course included various subjects, including, but not limited to C#, Asp .Net, SQL Server, Database administration, Perl, and Program design. 
+
+                            // Divider
+                            .pb-5
+
+                            // Skills Section
+                            section
+                                // Skillset Card
+                                .card.shadow.border-0.rounded-4.mb-5
+                                    .card-body.p-5
+                                        // Professional skills list
+                                        .mb-5
+                                            .d-flex.align-items-center.mb-4
+                                                .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
+                                                    i.bi.bi-tools
+                                                h3.fw-bolder.mb-0
+                                                    span.text-gradient.d-inline Professional Skills
+                                            .row.row-cols-1.row-cols-md-3.mb-4
+                                                .col.mb-4.mb-md-0
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Scoping and spec'ing
+                                                .col.mb-4.mb-md-0
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Architectural design
+                                                .col
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Web Development
+                                            .row.row-cols-1.row-cols-md-3
+                                                .col.mb-4.mb-md-0
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Api Development
+                                                .col.mb-4.mb-md-0
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Legacy code friendly
+                                                .col
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Familiar with UX design principles
+                                        // Languages list
+                                        .mb-0
+                                            .d-flex.align-items-center.mb-4
+                                                .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
+                                                    i.bi.bi-code-slash
+                                                h3.fw-bolder.mb-0
+                                                    span.text-gradient.d-inline Languages
+                                            .row.row-cols-1.row-cols-md-3.mb-4
+                                                .col.mb-4.mb-md-0
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 HTML
+                                                .col.mb-4.mb-md-0
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 CSS
+                                                .col
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 JavaScript
+                                            .row.row-cols-1.row-cols-md-3.mb-4
+                                                .col.mb-4.mb-md-0
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Typescript
+                                                .col.mb-4.mb-md-0
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 C#
+                                                .col
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 TSQL
+                                            .row.row-cols-1.row-cols-md-3
+                                                .col.mb-4.mb-md-0
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Php
+                                                .col.mb-4.mb-md-0
+                                                    .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100 Vue
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug
