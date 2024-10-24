@@ -13,6 +13,8 @@ html(lang='en')
         // Favicon
         link(rel='icon' type='image/x-icon' href='assets/favicon.ico')
 
+        script(src="js/scripts.js")
+
         include includes/css.pug
 
     body.d-flex.flex-column.h-100
@@ -31,19 +33,17 @@ html(lang='en')
                             .text-center.text-xxl-start
                                 .badge.bg-gradient-primary-to-secondary.text-white.mb-4
                                     .text .Net Core &middot; C# &middot; Angular &middot; Azure
-                                .fs-3.fw-light.text-muted I can help your business to
+                                .fs-3.fw-light.text-muted Empowering your business
                                 h1.display-3.fw-bolder.mb-5
-                                    span.text-gradient.d-inline Make a positive impact with code
+                                    span.text-gradient.d-inline Through meaningful code.
                                 .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xxl-start.mb-3
                                     a.btn.btn-primary.btn-lg.px-5.py-3.me-sm-3.fs-6.fw-bolder(href='resume.html') Resume
                                     a.btn.btn-outline-dark.btn-lg.px-5.py-3.fs-6.fw-bolder(href='projects.html') Projects
                         .col-xxl-7
                             // Header profile picture
                             .d-flex.justify-content-center.mt-5.mt-xxl-0
-                                .profile.bg-gradient-primary-to-secondary // 
-                                    - let images = ['assets/coding_1.png', 'assets/kidlike.png', 'assets/ninja.png', 'assets/profile_ash.png', 'assets/profile.png']; //Images array
-                                    - const image = images[Math.floor(Math.random() * images.length)];
-                                    img.profile-img(src=image alt='...')
+                                .profile.bg-gradient-primary-to-secondary
+                                    img#profile-img.profile-img(src='assets/profile_ash.png' alt='...')
                                     .dots-1
                                         include includes/svg-dots.pug
                                     .dots-2
@@ -61,8 +61,7 @@ html(lang='en')
                             .text-center.my-5
                                 h2.display-5.fw-bolder
                                     span.text-gradient.d-inline About Me
-                                p.lead.fw-light.mb-4 My name is Jaco Slabbert and I build software to make a difference.
-                                p.text-muted I am a focused and driven individual, devoted to maintaining a constant state of learning and mentoring. The industry of software development has intrigued and fascinated me from a very young age, and I have been in search of more efficient, cleaner, and better code ever since. I highly value all life and cultures and view a difference of opinion as an opportunity to learn from someone else. I know I would be an asset to your organization because of my belief in ever evolving software to the betterment of mankind, a yearning for knowledge and the focus to get the job done faster and more efficiently each time.
+                                p.lead.fw-light.mb-4 As a passionate software developer and proud follower of Jesus, I am committed to continuous learning, mentorship, and the pursuit of excellence. My fascination with technology from a young age drives me to create clean, efficient, and impactful solutions. I value diverse perspectives, seeing them as opportunities for growth. Guided by my faith and a belief in the transformative power of software, I aim to contribute meaningfully to organizations, building software for the betterment of humanity.
 
         // Footer
         include includes/footer.pug
